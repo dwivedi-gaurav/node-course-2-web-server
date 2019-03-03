@@ -39,6 +39,13 @@ app.get('/',(req,res)=>{
   });
 });
 
+app.get('/projects',(req,res)=>{
+  res.render('projects',{
+    pageTitle:'Projects page',
+    msg:'List of projects'
+  });
+});
+
 app.get('/about',(req,res)=>{
   res.render('about',{
     pageTitle:'About Page',
